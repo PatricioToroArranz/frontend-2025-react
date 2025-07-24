@@ -1,0 +1,154 @@
+/* style.css */
+
+/* Estilos Generales del Cuerpo */
+body {
+    font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat a todo el cuerpo del documento */
+    color: #333; /* Define un color de texto gris oscuro por defecto */
+    background-color: #f8f9fa; /* Establece un color de fondo gris claro para el cuerpo */
+}
+
+/* Estilos de la Barra de Navegación */
+.navbar-brand {
+    font-weight: 700; /* Define el peso de la fuente para la marca de la barra de navegación */
+    color: #007bff !important; /* Establece el color principal de la marca a azul Bootstrap, ¡importante para anular otras reglas! */
+}
+.navbar-brand .logo-icon {
+    display: inline-block; /* Permite controlar ancho y alto del icono */
+    width: 30px; /* Ancho del icono del logo */
+    height: 30px; /* Altura del icono del logo */
+    vertical-align: middle; /* Alinea el icono verticalmente con el texto */
+    margin-right: 5px; /* Margen a la derecha del icono */
+}
+.navbar-nav .nav-link {
+    color: #495057 !important; /* Color de los enlaces de navegación */
+    font-weight: 600; /* Peso de la fuente para los enlaces de navegación */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color al pasar el ratón */
+}
+.navbar-nav .nav-link:hover {
+    color: #007bff !important; /* Color de los enlaces al pasar el ratón */
+}
+
+/* Estilos para Jumbotron */
+.jumbotron {
+    background-color: #e9ecef; /* Color de fondo del jumbotron */
+    padding: 4rem 2rem; /* Espaciado interno del jumbotron */
+    margin-bottom: 0; /* Elimina el margen inferior predeterminado del jumbotron */
+    border-radius: 0.5rem; /* Bordes redondeados para el jumbotron */
+    text-align: center; /* Centra el texto dentro del jumbotron */
+}
+
+/* Estilos del Carrusel */
+.carousel-item img {
+    height: 450px; /* Altura fija para todas las imágenes del carrusel */
+    object-fit: cover; /* Asegura que las imágenes cubran el área sin distorsionarse */
+    filter: brightness(60%); /* Oscurece la imagen para mejorar el contraste del texto superpuesto */
+}
+.carousel-caption {
+    top: 50%; /* Posiciona el pie de foto del carrusel a la mitad de la altura */
+    transform: translateY(-50%); /* Ajusta la posición vertical para centrarlo perfectamente */
+    left: 5%; /* Margen izquierdo del pie de foto */
+    right: 5%; /* Margen derecho del pie de foto */
+    text-align: left; /* Alinea el texto a la izquierda dentro del pie de foto */
+    z-index: 1; /* Asegura que el pie de foto esté por encima de la imagen */
+}
+.carousel-caption h5 {
+    font-size: 2.5rem; /* Tamaño de fuente para el título del carrusel */
+    font-weight: 700; /* Peso de la fuente para el título */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Sombra de texto para mayor legibilidad */
+}
+.carousel-caption p {
+    font-size: 1.2rem; /* Tamaño de fuente para el párrafo del carrusel */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* Sombra de texto para mayor legibilidad */
+}
+
+/* Estilos de Botones */
+.btn-primary {
+    background-color: #007bff; /* Color de fondo principal para botones */
+    border-color: #007bff; /* Color del borde principal para botones */
+    border-radius: 0.3rem; /* Bordes redondeados para botones */
+    padding: 0.75rem 1.5rem; /* Espaciado interno para botones */
+    font-weight: 600; /* Peso de la fuente para botones */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transición suave para el hover de botones */
+}
+.btn-primary:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón por el botón */
+    border-color: #0056b3; /* Color del borde al pasar el ratón por el botón */
+}
+
+/* Estilos de Secciones */
+.section {
+    padding: 4rem 0; /* Espaciado interno superior e inferior para las secciones */
+}
+
+/* Estilos de Tarjetas (Cards) */
+.card {
+    border: none; /* Elimina el borde de las tarjetas */
+    border-radius: 0.5rem; /* Bordes redondeados para las tarjetas */
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); /* Sombra para las tarjetas */
+    transition: transform 0.3s ease; /* Transición suave para el efecto hover de las tarjetas */
+}
+.card:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta ligeramente al pasar el ratón */
+}
+.card-img-top {
+    border-top-left-radius: 0.5rem; /* Bordes redondeados superiores izquierdos para las imágenes de la tarjeta */
+    border-top-right-radius: 0.5rem; /* Bordes redondeados superiores derechos para las imágenes de la tarjeta */
+    height: 200px; /* Altura fija para las imágenes de la tarjeta */
+    object-fit: cover; /* Asegura que las imágenes de la tarjeta cubran el área sin distorsionarse */
+}
+
+/* Estilos del Pie de Página (Footer) */
+.footer {
+    background-color: #343a40; /* Color de fondo oscuro para el pie de página */
+    color: #f8f9fa; /* Color de texto claro para el pie de página */
+    padding: 2rem 0; /* Espaciado interno del pie de página */
+    text-align: center; /* Centra el texto en el pie de página */
+    border-top-left-radius: 0.5rem; /* Bordes redondeados superiores izquierdos para el pie de página */
+    border-top-right-radius: 0.5rem; /* Bordes redondeados superiores derechos para el pie de página */
+    margin-top: 4rem; /* Margen superior para separar el pie de página del contenido */
+}
+.footer a {
+    color: #007bff; /* Color de los enlaces en el pie de página */
+    text-decoration: none; /* Elimina la decoración de texto de los enlaces */
+}
+.footer a:hover {
+    color: #f8f9fa; /* Color de los enlaces en el pie de página al pasar el ratón */
+}
+.footer .social-icons a {
+    font-size: 1.5rem; /* Tamaño de fuente para los iconos sociales */
+    margin: 0 10px; /* Margen horizontal entre iconos sociales */
+    color: #f8f9fa; /* Color de los iconos sociales */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color de los iconos sociales */
+}
+.footer .social-icons a:hover {
+    color: #007bff; /* Color de los iconos sociales al pasar el ratón */
+}
+
+/* Estilos para el Mapa de Contacto */
+.contact-map {
+    width: 100%; /* Ancho completo para el mapa de contacto */
+    height: 400px; /* Altura fija para el mapa de contacto */
+    border: 0; /* Elimina el borde del iframe del mapa */
+    border-radius: 0.5rem; /* Bordes redondeados para el mapa */
+    margin-bottom: 2rem; /* Margen inferior para el mapa */
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); /* Sombra para el mapa */
+}
+
+/* Responsiveness para pantallas más pequeñas */
+@media (max-width: 768px) { /* Media query para pantallas con un ancho máximo de 768px (tablets y móviles) */
+    .carousel-item img {
+        height: 300px; /* Reduce la altura de las imágenes del carrusel en pantallas pequeñas */
+    }
+    .carousel-caption h5 {
+        font-size: 1.8rem; /* Reduce el tamaño del título del carrusel en pantallas pequeñas */
+    }
+    .carousel-caption p {
+        font-size: 1rem; /* Reduce el tamaño del párrafo del carrusel en pantallas pequeñas */
+    }
+    .jumbotron h1 {
+        font-size: 2rem; /* Reduce el tamaño del título principal del jumbotron en pantallas pequeñas */
+    }
+    .jumbotron p {
+        font-size: 1.1rem; /* Reduce el tamaño del párrafo del jumbotron en pantallas pequeñas */
+    }
+}
